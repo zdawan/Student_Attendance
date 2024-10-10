@@ -1,9 +1,14 @@
-import Image from "next/image";
+"use client";
+import {
+  RegisterLink,
+  LoginLink,
+} from "@kinde-oss/kinde-auth-nextjs/components";
 
 export default function Home() {
   return (
     <div>
-      <h1> Attendance System </h1>{" "}
+      <h1> Attendance System </h1> <LoginLink> Sign in </LoginLink>{" "}
+      <RegisterLink> Sign up </RegisterLink>{" "}
     </div>
   );
 }
